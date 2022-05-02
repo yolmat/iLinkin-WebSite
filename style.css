@@ -1,5 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 500vh;
+    width: 99.4vw;
+}
+
+body::-webkit-scrollbar {
+    width: 0.6vw;
+}
+
+body::-webkit-scrollbar-track {
+    background:#FFFFFF;
+    opacity: 0.2;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f14242;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #f14242;
+}
+
 .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 30px;
+}
+
+.panel {
+    background-image: url("./src/panel1.png");
+    background-size: cover;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionPanel {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sectionPanel h1 {
+    display: flex;
+    justify-content: center;
+    color: #fffafa;
+    font-size: 5rem;
+    font-weight: 900;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.sectionPanel h2 {
+    color: #FFFFFF;
+    padding-top: 20px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #000;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.navBar {
+    background-color: #e9e9e9;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    width: 99.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listNavBar {
+    padding: 10px 90px;
+}
+
+.listNavBar img {
+    width: 50%;
+}
+
+.linkNavbar {
+    color: #808080;
+    font-size: 120%;
+    font-weight: 600;
+}
+
+.linkNavbar:hover {
+    color: #f14242;
+    border-bottom: solid #f14242 2px;
+}
+
+.linkNavbar:active {
+    opacity: 0.8;
 }
