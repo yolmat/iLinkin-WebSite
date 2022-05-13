@@ -1,0 +1,342 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*
+
+    Body and scrollbar
+
+*/
+
+body {
+    height: 500vh;
+    width: 99.4vw;
+}
+
+body::-webkit-scrollbar {
+    width: 0.6vw;
+}
+
+body::-webkit-scrollbar-track {
+    background: #FFFFFF;
+    opacity: 0.2;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f14242;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #f14242;
+}
+
+/*
+
+    Icon Whatsapp
+
+*/
+
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 0.3rem;
+}
+
+/*
+
+    first panel from site
+
+*/
+
+
+.panel {
+    background-image: url("./src/panel1.png");
+    background-size: cover;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionPanel {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sectionPanel h1 {
+    display: flex;
+    justify-content: center;
+    color: #fffafa;
+    font-size: 5rem;
+    font-weight: 900;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.sectionPanel h2 {
+    color: #FFFFFF;
+    padding-top: 20px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #000;
+}
+
+/*
+
+    Main tag
+
+*/
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/*
+
+    NavBar configuration
+
+*/
+
+
+.navBar {
+    background-color: #d1d1d1;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    width: 99.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listNavBar {
+    padding: 10px 90px;
+}
+
+.listNavBar img {
+    width: 50%;
+}
+
+.linkNavbar {
+    color: #808080;
+    font-size: 120%;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.linkNavbar:hover {
+    color: #f14242;
+    border-bottom: solid #f14242 2px;
+}
+
+.linkNavbar:active {
+    opacity: 0.8;
+}
+
+/*
+
+    Fist content, brands and solucions
+
+*/
+
+
+.content {
+    background-color: #f1f1f1;
+}
+
+.brands img {
+    height: 100px;
+    width: 100px;
+}
+
+.workedBrands {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.brands {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    margin: 1.5rem;
+    padding: 2rem 2rem;
+    background-color: #d3d3d3;
+    border-radius: 8px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 25px 8px #D3D3D3;
+    box-shadow: 0px 0px 25px 8px #D3D3D3;
+}
+
+.brands h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+.brands p {
+    font-weight: bold;
+}
+
+#samsung {
+    width: 78%;
+}
+
+.break {
+    flex-basis: 100%;
+    width: 0;
+}
+
+/*
+
+    Contact section
+
+*/
+
+.contacts {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #f14242;
+    height: 20rem;
+    align-items: center;
+    justify-content: center;
+    width: 99.4vw;
+}
+
+.numberEmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99.4vw;
+    height: 100%;
+}
+
+.numberEmail h1 {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.buttonsContact {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    justify-content: space-between;
+}
+
+.buttonsContact button {
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    background: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: 3px solid #FFFFFF;
+    outline-offset: 0px;
+    border-radius: 2px;
+    white-space: nowrap;
+    transition: all 0.5s ease-in-out;
+}
+
+.buttonsContact button:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    outline: none;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    outline: 3px solid rgba(255, 255, 255, 0.18);
+    animation-name: largeWidth;
+    animation-duration: 0.1s;
+    width: 110%;
+}
+
+.buttonsContact button i {
+    display: none;
+}
+
+.buttonsContact button:hover i {
+    display: flex;
+    animation-name: arrow;
+    animation-duration: 0.5s;
+    margin-left: 10%;
+}
+
+@keyframes arrow {
+    0% {
+        font-size: 0rem;
+    }
+
+    25% {
+        font-size: 0.25rem;
+    }
+
+    50% {
+        font-size: 0.5rem;
+    }
+
+    75% {
+        font-size: 0.75rem;
+    }
+
+    100% {
+        font-size: 1rem;
+    }
+}
+
+@keyframes largeWidth {
+    0% {
+        width: 100%;
+    }
+
+    25% {
+        width: 102%;
+    }
+
+    50% {
+        width: 105%
+    }
+
+    75% {
+        width: 107%;
+    }
+
+    100% {
+        width: 110%;
+    }
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUs header h1 {
+    display: flex;
+    text-align: center;
+}

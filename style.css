@@ -5,7 +5,6 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style: none;
-    text-align: center;
 }
 
 /*
@@ -15,7 +14,6 @@
 */
 
 body {
-    height: 500vh;
     width: 99.4vw;
 }
 
@@ -237,6 +235,7 @@ nav ul {
     color: #FFFFFF;
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
+    text-align: center;
 }
 
 .buttonsContact {
@@ -329,4 +328,31 @@ nav ul {
     100% {
         width: 110%;
     }
+}
+
+/*
+
+    Created a about us session
+
+*/
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    width: 99.4vw;
+    padding: 4rem 8rem;
+}
+
+.aboutUs header h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.aboutUs article p {
+    display: flex;
+    text-align: justify;
+    font-size: 1.2rem;
 }
