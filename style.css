@@ -396,3 +396,18 @@ footer a {
     font-size: 1.5rem;
     margin-right: 30px;
 }
+
+@media (max-width: 959px) {
+    body {
+        width: 100vw;
+    }
+
+    .listNavBar {
+        padding: 10px 30px;
+    }
+
+    .contacts {
+        width: 100vw;
+    }
+}
+
