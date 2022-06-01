@@ -9,33 +9,6 @@
 
 /*
 
-    Body and scrollbar
-
-*/
-
-body {
-    width: 99.4vw;
-}
-
-body::-webkit-scrollbar {
-    width: 0.6vw;
-}
-
-body::-webkit-scrollbar-track {
-    background: #FFFFFF;
-    opacity: 0.2;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #f14242;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-    background-color: #f14242;
-}
-
-/*
-
     Icon Whatsapp
 
 */
@@ -45,7 +18,6 @@ body::-webkit-scrollbar-thumb:hover {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    padding: 0.3rem;
 }
 
 /*
@@ -54,16 +26,16 @@ body::-webkit-scrollbar-thumb:hover {
 
 */
 
-
 .panel {
     background-image: url("./src/panel1.png");
     background-size: cover;
     background-position: 100% 50%;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .sectionPanel {
@@ -76,7 +48,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     justify-content: center;
     color: #fffafa;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 900;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #000000;
@@ -84,179 +56,171 @@ body::-webkit-scrollbar-thumb:hover {
 
 .sectionPanel h2 {
     color: #FFFFFF;
-    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 2.5rem;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #000;
 }
 
 /*
 
-    Main tag
+    Main
 
 */
-
 
 .main {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
 }
 
 /*
 
-    NavBar configuration
+    NavBar
 
 */
 
-
-.navBar {
+.header {
+    display: flex;
     background-color: #d1d1d1;
+    justify-content: space-around;
     position: sticky;
+    align-items: center;
+    padding: .2rem;
     top: 0;
 }
 
-nav ul {
-    width: 99.4vw;
+.imgLogo {
+    width: 10rem;
+}
+
+.navBar {
+    display: flex;
+}
+
+.menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-.listNavBar {
-    padding: 10px 90px;
-}
-
-.listNavBar img {
-    width: 50%;
-}
-
-.linkNavbar {
+.link {
     color: #808080;
-    font-size: 120%;
-    font-weight: 600;
-    transition: all 0.1s ease-in-out;
+    padding: 1.5rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-.linkNavbar:hover {
+.link:hover {
     color: #f14242;
     border-bottom: solid #f14242 2px;
 }
 
-.linkNavbar:active {
+.link:active {
     opacity: 0.8;
+}
+
+.buttonMenu {
+    display: none;
 }
 
 /*
 
-    Fist content, brands and solucions
+    Section Brands
 
 */
 
-
 .content {
-    background-color: #f1f1f1;
-}
-
-.brands img {
-    height: 100px;
-    width: 100px;
+    width: 100%;
 }
 
 .workedBrands {
     display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    align-items: center;
+    padding: 1rem 0;
 }
 
 .brands {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: column wrap;
+    width: 25rem;
     align-items: center;
-    width: 20rem;
-    margin: 1.5rem;
-    padding: 2rem 2rem;
-    background-color: #d3d3d3;
-    border-radius: 8px;
-    text-align: center;
-    -webkit-box-shadow: 0px 0px 25px 8px #D3D3D3;
-    box-shadow: 0px 0px 25px 8px #D3D3D3;
+    margin: 1.5rem 1rem;
+    background-color: #d1d1d1;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 8px 5px rgba(209, 209, 209, 1);
+    -moz-box-shadow: 0px 0px 8px 5px rgba(209, 209, 209, 1);
+    box-shadow: 0px 0px 8px 5px rgba(209, 209, 209, 1);
+}
+
+.brandsImg {
+    width: 100px;
+    height: 100px;
 }
 
 .brands h1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-weight: 400;
+    margin: 1rem 0;
 }
 
 .brands p {
-    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-#samsung {
-    width: 78%;
-}
-
-.break {
-    flex-basis: 100%;
-    width: 0;
+.brands img {
+    margin-top: 1rem;
 }
 
 /*
 
-    Contact section
+    Sessions Contacts
 
 */
 
-.contacts {
-    display: flex;
-    flex-flow: row nowrap;
-    background-color: #f14242;
-    height: 20rem;
-    align-items: center;
-    justify-content: center;
-    width: 99.4vw;
-}
-
 .numberEmail {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 99.4vw;
-    height: 100%;
+    flex-flow: column wrap;
+    width: 100%;
+    background-color: #f14242;
+    text-align: center;
+    padding: 5rem;
 }
 
-.numberEmail h1 {
+.textContact {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    width: 100%;
     color: #FFFFFF;
-    font-size: 2.5rem;
-    margin-bottom: 2.5rem;
-    text-align: center;
 }
 
 .buttonsContact {
     display: flex;
-    flex-direction: row;
-    width: 65%;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.buttonsContact button {
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+.buttons {
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
-    background: none;
-    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 7px;
     cursor: pointer;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
     outline: 3px solid #FFFFFF;
     outline-offset: 0px;
-    border-radius: 2px;
     white-space: nowrap;
+    background: none;
     transition: all 0.5s ease-in-out;
 }
 
@@ -269,145 +233,148 @@ nav ul {
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
     outline: 3px solid rgba(255, 255, 255, 0.18);
-    animation-name: largeWidth;
-    animation-duration: 0.1s;
-    width: 110%;
-}
-
-.buttonsContact button i {
-    display: none;
-}
-
-.buttonsContact button:hover i {
-    display: flex;
-    animation-name: arrow;
-    animation-duration: 0.5s;
-    margin-left: 10%;
-}
-
-@keyframes arrow {
-    0% {
-        font-size: 0rem;
-    }
-
-    25% {
-        font-size: 0.25rem;
-    }
-
-    50% {
-        font-size: 0.5rem;
-    }
-
-    75% {
-        font-size: 0.75rem;
-    }
-
-    100% {
-        font-size: 1rem;
-    }
-}
-
-@keyframes largeWidth {
-    0% {
-        width: 100%;
-    }
-
-    25% {
-        width: 102%;
-    }
-
-    50% {
-        width: 105%
-    }
-
-    75% {
-        width: 107%;
-    }
-
-    100% {
-        width: 110%;
-    }
 }
 
 /*
 
-    Created about us session
+    About Us
 
 */
 
 .aboutUs {
     display: flex;
-    flex-direction: column;
-    width: 99.4vw;
-    padding: 4rem 8rem;
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+    padding: 2rem;
 }
 
-.aboutUs header h1 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.titleAboutUs {
+    font-size: 2rem;
     margin-bottom: 2rem;
-    font-size: 2.5rem;
 }
 
-.aboutUs article p {
-    display: flex;
-    text-align: justify;
-    font-size: 1.2rem;
+.textAboutUs {
+    font-size: 1rem;
 }
 
 /*
 
-    Created footer
+    Footer
 
 */
 
-footer {
+.FooterPage {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    padding: 1rem 2rem;
+    text-decoration: none;
     background-color: #f14242;
 }
 
-footer a {
+.part1 h3,
+a {
+    font-size: 0.8rem;
     color: #000000;
 }
 
-.part1 {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 8rem;
+.part1 h3 {
+    margin-bottom: 0.3rem;
+}
+
+.part1 a h3 {
+    text-decoration: underline;
 }
 
 .part2 {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 1rem;
-}
-
-.part1 h3 {
-    text-decoration: underline;
-    margin-bottom: 0.2rem;
-}
-
-.part1 h3 {
-    font-size: 0.9rem;
+    flex-flow: row wrap;
+    padding: 0 7rem;
+    justify-content: space-evenly;
 }
 
 .part2 i {
     font-size: 1.5rem;
-    margin-right: 30px;
+    transition: all 0.5s ease-in-out;
 }
 
-@media (max-width: 959px) {
-    body {
-        width: 100vw;
-    }
-
-    .listNavBar {
-        padding: 10px 30px;
-    }
-
-    .contacts {
-        width: 100vw;
-    }
+.part1 a:active,
+.part2 a:hover {
+    color: #FFFFFF;
+    opacity: 0.7;
 }
 
+.part1 a:hover,
+.part2 a:active {
+    opacity: 0.4;
+}
+
+@media (max-width: 830px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7e7;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu .link {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+
+    #buttonMobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font: 1rem;
+        border: none;
+        background-color: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.5s;
+        position: relative;
+
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+}

@@ -16,8 +16,6 @@
 
 <body>
 
-    <!--<a href="../teste.html">TESTE AQUI</a>-->
-
     <div class="container">
         <div class="gereral">
 
@@ -31,90 +29,84 @@
             </div>
 
             <div class="main">
-                <div class="navBar">
-                    <nav>
-                        <ul class="listNavBar">
-                            <a href="#" class="imgLink"><img src="./src/Logo.png"></a>
-                            <a href="#" class="linkNavbar">
-                                <li>Home</li>
-                            </a>
-                            <a href="#aboutUs" class="linkNavbar">
-                                <li>Quem Somos</li>
-                            </a>
-                            <a href="#content" class="linkNavbar">
-                                <li>Nossos Serviços</li>
-                            </a>
-                            <a href="#contact" class="linkNavbar">
-                                <li>Contato</li>
-                            </a>
-                            <a href="https://goo.gl/maps/gAHnX6guv9XgdS8o7" class="linkNavbar" target="_blank">
-                                <li>Encontre-nos</li>
-                            </a>
+                <header id="header" class="header">
+                    <a href="https://www.ilinkin.com.br"><img src="./src/logo.png" alt="Logo" class="imgLogo" /></a>
+                    <nav id="nav">
+                        <button id="buttonMobile" class="buttonMenu">
+                            Menu
+                            <span id="hamburguer"></span>
+                        </button>
+                        <ul id="menu" class="menu">
+                            <li><a class="link" href="#home">Home</a></li>
+                            <li><a class="link" href="#aboutUs">Quem somos</a></li>
+                            <li><a class="link" href="#content">Nossos Serviços</a></li>
+                            <li><a class="link" href="#contact">Contatos</a></li>
+                            <li><a class="link" href="https://goo.gl/maps/gAHnX6guv9XgdS8o7">Encontre-nos</a></li>
                         </ul>
                     </nav>
-                </div>
-
+                </header>
+            
                 <div id="content" class="content">
                     <section class="workedBrands">
                         <article class="brands">
-                            <img src="./src/Acer.png">
-                            <h1>Assistencia tecnica de Notebook</h1>
+                            <img src="./src/Acer.png" class="brandsImg" alt="logo Acer">
+                            <h1>Assistência técnica de Notebook</h1>
                             <p>Acer</p>
                         </article>
                         <article class="brands">
-                            <img src="./src/Asus.png">
-                            <h1>Assistencia tecnica de Notebook</h1>
+                            <img src="./src/Asus.png" class="brandsImg" alt="logo Asus">
+                            <h1>Assistência técnica de Notebook</h1>
                             <p>Asus</p>
                         </article>
                         <article class="brands">
-                            <img src="./src/Dell.png">
-                            <h1>Assistencia tecnica de Notebook e PC</h1>
+                            <img src="./src/Dell.png" class="brandsImg" alt="logo Dell">
+                            <h1>Assistência técnica de Notebook e PC</h1>
                             <p>Dell</p>
                         </article>
                         <div class="break"></div>
                         <article class="brands">
-                            <img src="./src/HP.png">
-                            <h1>Assistencia tecnica de Notebook</h1>
+                            <img src="./src/HP.png" class="brandsImg" alt="logo HP">
+                            <h1>Assistência técnica de Notebook</h1>
                             <p>HP</p>
                         </article>
                         <article class="brands">
-                            <img src="./src/Lenovo.png">
-                            <h1>Assistencia tecnica de Notebook e PC</h1>
+                            <img src="./src/Lenovo.png" class="brandsImg" alt="Logo Lenovo">
+                            <h1>Assistência técnica de Notebook e PC</h1>
                             <p>Lenovo</p>
                         </article>
                         <article class="brands">
-                            <img src="./src/Positivo.png">
-                            <h1>Assistencia tecnica de Notebook e PC</h1>
+                            <img src="./src/Positivo.png" class="brandsImg" alt="Logo Positivo">
+                            <h1>Assistência técnica de Notebook e PC</h1>
                             <p>Positivo</p>
                         </article>
                         <article id="samsung" class="brands">
-                            <img src="./src/Samsung.png">
-                            <h1>Assistencia tecnica de Notebook</h1>
+                            <img src="./src/Samsung.png" class="brandsImg" alt="Logo Samsung">
+                            <h1>Assistência técnica de Notebook</h1>
                             <p>Samsung</p>
                         </article>
                     </section>
+
                     <section id="contact" class="contacts">
                         <article class="numberEmail">
-                            <h1>Escolha a melhor forma de entrar em<br>contato conosco </h1>
+                            <h1 class="textContact">Escolha a melhor forma de entrar em contato conosco</h1>
                             <div class="buttonsContact">
-                                <a href="mailto:atendimento@ilinkin.com.br?subject=Soliticação de Orçamento" target="_blank"
-                                    target="_blank"><button class="email">Email: atendimento@ilinkin.com.br <i
-                                            class='bx bxs-chevron-right'></i></button></a>
-                                <a href="https://api.whatsapp.com/send?phone=5511960819221&text=Boa%20Tarde.%20Gostaria%20de%20realizar%20um%20orçamento" target="_blank"
-                                    target="_blank"><button class="wtt">Whatsapp: (11) 9 6081-9079 <i
-                                            class='bx bxs-chevron-right'></i></button></a>
-                                <a href="tel:+551138515516" target="_blank"><button class="Telephone">Telefone: (11) 3851-5516 <i
-                                            class='bx bxs-chevron-right'></i></Button></a>
+                                <a href="https://api.whatsapp.com/send?phone=5511960819221&text=Boa%20Tarde.%20Gostaria%20de%20realizar%20um%20orçamento"
+                                    target="_blank" target="_blank"><button class="buttons" class="wtt">Whatsapp: (11) 9
+                                        6081-9079</button></a>
+                                <a href="mailto:atendimento@ilinkin.com.br?subject=Soliticação de Orçamento"
+                                    target="_blank" target="_blank"><button class="buttons" class="email">Email:
+                                        atendimento@ilinkin.com.br</button></a>
+                                <a href="tel:+551138515516" target="_blank"><button class="buttons"
+                                        class="Telephone">Telefone: (11) 3851-5516</Button></a>
                             </div>
                         </article>
                     </section>
-
                     <section id="aboutUs" class="aboutUs">
-                        <header>
+                        <header class="titleAboutUs">
                             <h1>Sobre nós</h1>
                         </header>
                         <article>
-                            <p>
+                            <p class="textAboutUs">
                                 Nós somos iLinkin, uma empresa prestadora de serviços focada em manutenção de
                                 computadores e notebooks. Trabalhando com diversos modelos e marcas, priorizando
                                 qualidade e eficiência dos nossos serviços.
@@ -145,14 +137,15 @@
                         </article>
                     </section>
 
-                    <footer>
+                    <footer class="FooterPage">
                         <div class="part1">
                             <h3>iLinkin Soluções em Informática</h3>
-                            <a href="mailto:atendimento@ilinkin.com.br?subject=Soliticação de Orçamento" target="_blank">
+                            <a href="mailto:atendimento@ilinkin.com.br?subject=Soliticação de Orçamento"
+                                target="_blank">
                                 <h3>Email: atendimento@ilinkin.com.br</h3>
                             </a>
-                            <a
-                                href="https://api.whatsapp.com/send?phone=5511960819221&text=Boa%20Tarde.%20Gostaria%20de%20realizar%20um%20orçamento" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=5511960819221&text=Boa%20Tarde.%20Gostaria%20de%20realizar%20um%20orçamento"
+                                target="_blank">
                                 <h3>Whatsapp: (11) 9 6081-8221</h3>
                             </a>
                             <a href="tel:+551138515516" target="_blank">
@@ -163,9 +156,12 @@
                             </a>
                         </div>
                         <div class="part2">
-                            <a href="https://api.whatsapp.com/send?phone=5511960819221" target="_blank"><i class='bx bxl-whatsapp bx-border-circle' ></i></a>
-                            <a href="https://www.ilinkin.com.br" target="_blank"><i class='bx bx-globe bx-border-circle' ></i></a>
-                            <a href="https://www.instagram.com/ilinkin_informatica/" target="_blank"><i class='bx bxl-instagram bx-border-circle' ></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5511960819221" target="_blank"><i
+                                    class='bx bxl-whatsapp bx-border-circle'></i></a>
+                            <a href="https://www.ilinkin.com.br" target="_blank"><i
+                                    class='bx bx-globe bx-border-circle'></i></a>
+                            <a href="https://www.instagram.com/ilinkin_informatica/" target="_blank"><i
+                                    class='bx bxl-instagram bx-border-circle'></i></a>
                         </div>
                     </footer>
 
@@ -181,12 +177,12 @@
                     <img src="./src/WhatsappLogo.png" width="60" height="60">
                 </a>
             </div>
-
         </div>
 
     </div>
 
-
 </body>
+
+<script src="./script.js"></script>
 
 </html>
