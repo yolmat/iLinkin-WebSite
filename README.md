@@ -2,7 +2,7 @@
 
 <a href="https://ilinkin.com.br">Visite o SIte aqui</a>
 
-<img src="exemplo-image.png" alt="exemplo imagem">
+<img src="./src/GitImg/GitWebSite.jpeg" alt="exemplo img in computer" heigth="200px">
 
 > Esse projeto foi idealizado para ser o principal site do empresa iLinkin Soluções em Informatica, Apresentando a empresa, seus serviços e onde ela se encontra. Visando funcionar tanto no computador quando no celulares e tablets
 
